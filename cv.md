@@ -56,7 +56,7 @@ ___
 ### Code example
 
 *JS function for fast checkout*
-
+```js
         $(document).ready(function(){
         var phone_last_enter = 10;
         var phone_last_enter= $("input[name=fast_order_contact]").val();
@@ -129,7 +129,7 @@ ___
         });
         
         });
-
+```
 
 ___
 
