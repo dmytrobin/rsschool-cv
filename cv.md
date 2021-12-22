@@ -49,7 +49,9 @@ ___
 * MongoDB 
 * Network equipment and protocols
 * REXX
-
+* Google script
+* VBA
+* Websites scrapping using Zennoposter and C#
 
 ___
 
