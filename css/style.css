@@ -1,3 +1,14 @@
-div{
-color: red;
+* {
+  box-sizing: border-box;
+}
+/* background-image: url('../assets/img/image.jpg'); */
+.header {
+    border: 1px solid red;.
+}
+.main {
+    border: 1px solid blue;.
+}
+
+.footer {
+    border: 1px solid yellow;.
 }
