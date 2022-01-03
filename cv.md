@@ -3,7 +3,7 @@
 ___
 
 
-![Avatar](/img/avatar1.jpg)
+![Avatar](/assets/img/avatar1.jpg)
 
 ___
 ### Position
