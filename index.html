@@ -5,22 +5,15 @@
     <meta charset="UTF-8" />
     <title>cv</title>
     <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/index.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -117,8 +110,8 @@
 
         <section id="code-example" class="section-code-example">
           <h2>Code example</h2>
-          <blockquote>
-            <pre>
+
+          <pre>
               <code>
                 $(document).ready(function(){
                   var phone_last_enter = 10;
@@ -130,79 +123,15 @@
                           $(".send").css("opacity","0.5");
                           $(".send").attr("disabled","disabled");
                       }
-                  $(".modal").colorbox({inline:true, width:"30%"});
-                  $("#click").click(function(){
-                      var name = $("input[name=yourname]").val(); 
-                      var contact = $("input[name=contact]").val();
-                      var contact_len = contact.length;
-                      if (contact_len == 10){
-                          $("input[name=contact]").css('background','white');
-                          $("input[name=contact]").css('color','#5F0054');
-                          $.ajax({
-                          type: "POST",
-                          url: baseurl+"email/fastcall",
-                          data: {name:name, contact:contact}, 
-                          success: function(data){
-                              $('div #onee').html(data);
-                              }
-                  
-                          }); 
-                          
-                      }else{
-                          $("input[name=contact]").css('background','#F59DB2');
-                          $("input[name=contact]").css('color','white');
-                      }
-                  });
-                  
-                  $(".modal_fast_order").colorbox({inline:true, width:"30%"});
-                  
-                  
-                  var phone = $("input[name=fast_order_contact]").keyup(function() {
-                  var phoneone = $("input[name=fast_order_contact]").val();
-                  var len = phoneone.length;
-                      if (len == 10){
-                          $('.hide_notification').css('display','none');
-                          $("input[name=fast_order_contact]").css('background','white');
-                          $(".send").css("opacity","1");
-                          $("input[name=fast_order_contact]").css("color","#5F0054");
-                          $(".send").removeAttr("disabled");
-                      }else{
-                              $('.hide_notification').css('display','inline');
-                              $("input[name=fast_order_contact]").css('background','#F59DB2');
-                              $(".send").css("opacity","0.5");
-                              $("input[name=fast_order_contact]").css("color","white");
-                              $(".send").attr("disabled","disabled");
-                              }
-                  });
-                  $("#send_p").on("click",".send", function(){
-                      var product_id = $("input[name=product_id]").val(); 
-                      var phone = $("input[name=fast_order_contact]").val();
-                      
-                      $.ajax({
-                          type: "POST",
-                          url: baseurl+"fast_order/fastcall",
-                          data: {product_id:product_id,phone:phone}, 
-                      
-                          success: function(data){
-                              $('div #fastcall').html(data);
-                              }
-                          
-                          }); 
-                          
-                  });
-                  
-                  });
               </code>
             </pre>
-          </blockquote>
         </section>
 
         <section id="courses" class="section-courses">
           <h2>Courses</h2>
           <ul>
-              <li>devclub.com.ua [PHP]</li>
-             <li>pozitiw.kiev.ua [PHP]</li>
-
+            <li>devclub.com.ua [PHP]</li>
+            <li>pozitiw.kiev.ua [PHP]</li>
           </ul>
         </section>
 
@@ -210,15 +139,18 @@
           <h2>Projects</h2>
           <ul>
             <li>melok.kiev.ua</li>
-            <li>Handle products data from Amazon, make a prediction of a good product to sell on Amazon.</li>
-
-
-        </ul>
+            <li>
+              Handle products data from Amazon, make a prediction of a good
+              product to sell on Amazon.
+            </li>
+          </ul>
         </section>
 
         <section id="education" class="section-education">
           <h2>Education</h2>
-          <p>Computer Networking, Lviv Polytechnic National University, 1998-2003</p>
+          <p>
+            Computer Networking, Lviv Polytechnic National University, 1998-2003
+          </p>
         </section>
 
         <section id="language" class="section-language">
@@ -230,10 +162,31 @@
 
     <footer class="footer">
       <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, atque
-        consequatur? Odio quo impedit expedita tempora at excepturi deleniti
-        distinctio ratione qui? Asperiores porro voluptatem quibusdam, minus
-        natus ad eveniet?
+        <ul class="footer-content-list">
+          <li>
+            <a
+              href="https://github.com/dmytrobin"
+              class="footer__link"
+              target="_blank"
+              ><img
+                src="assets/image/github.svg"
+                alt="ageraowls-github"
+                class="github-link"
+            /></a>
+          </li>
+          <li>2022</li>
+          <li>
+            <a
+              href="https://rs.school/js-stage0/"
+              class="footer__link"
+              target="_blank"
+              ><img
+                src="assets/image/rs_school_logo.svg"
+                alt="rs_school_link"
+                class="rschool-link"
+            /></a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
