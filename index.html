@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>cv</title>
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code-example" class="nav-link">Code example</a>
+            </li>
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#language" class="nav-link">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main-container">
+        <section id="profile" class="section-profile">
+          <img src="./assets/img/avatar1.jpg" alt="my photo" />
+          <div class="section-profile-title">
+            <h1>Dmytro Binyk</h1>
+            <h2>Junior front-end developer</h2>
+            <h3>Date of birth: 03.08.1981</h3>
+          </div>
+        </section>
+
+        <section id="contacts" class="section-contacts">
+          <h2>Contacts</h2>
+          <ul class="section-list">
+            <li class="section-item contacts-item">
+              Phone: <a href="tel:+380504465331" title="phone">+380504465331</a>
+            </li>
+            <li class="section-item contacts-item">
+              Email:
+              <a href="mailto:dmytro.binyk@gmail.com" title="email"
+                >dmytro.binyk@gmail.com</a
+              >
+            </li>
+            <li class="section-item contacts-item">
+              Telegram:
+              <a href="https://t.me/DimaBin" title="telegram">@DimaBin</a>
+            </li>
+            <li class="section-item contacts-item">
+              Github:
+              <a href="https://github.com/dmytrobin" title="github"
+                >dmytrobin</a
+              >
+            </li>
+            <li class="section-item contacts-item">
+              Discord:
+              <a
+                href="https://discord.com/users/693951046732480544"
+                title="discord"
+                >dimaomni#9179</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section id="about" class="section-about">
+          <h2>About</h2>
+          <p class="section-p">
+            I used to work for couple IT companies as a telecommunication
+            engineer, network engineer, helpdesk support L1 engineer and IT
+            manager. In addition, I created an e-commerce site using Codeigniter
+            framework. After this, I owned furniture workshop for several years
+            that I decided to close. Now, I am looking for opportunities to
+            return to IT.
+          </p>
+        </section>
+
+        <section id="skills" class="section-skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              Scripting languages: PHP, JavaScript, Google Apps Script, VBA,
+              REXX
+            </li>
+            <li>Databases: MySQL, MongoDB</li>
+            <li>Version control: GIT, Github</li>
+            <li>Parsing tools: Zennoposter</li>
+            <li>Graphics: Adobe Illustrator, Photoshop</li>
+            <li>3D drawing: FreeCad, Solidworks</li>
+            <li>Network: Cisco routing and switching, protocols</li>
+          </ul>
+        </section>
+
+        <section id="code-example" class="section-code-example">
+          <h2>Code example</h2>
+
+          <pre>
+              <code>
+                $(document).ready(function(){
+                  var phone_last_enter = 10;
+                  var phone_last_enter= $("input[name=fast_order_contact]").val();
+                      if (phone_last_enter.length == 10){
+                      $(".send").removeAttr("disabled");
+                      $(".send").css("opacity","1");
+                      }else {
+                          $(".send").css("opacity","0.5");
+                          $(".send").attr("disabled","disabled");
+                      }
+              </code>
+            </pre>
+        </section>
+
+        <section id="courses" class="section-courses">
+          <h2>Courses</h2>
+          <ul>
+            <li>devclub.com.ua [PHP]</li>
+            <li>pozitiw.kiev.ua [PHP]</li>
+          </ul>
+        </section>
+
+        <section id="projects" class="section-projects">
+          <h2>Projects</h2>
+          <ul class="section-item">
+            <li>
+              <a href="https://1drv.ms/u/s!AuzBswfAOpeoqaBKlNM0e5_E3sWenQ"
+                >melok.kiev.ua</a
+              >
+            </li>
+            <li>
+              Handle products data from Amazon, make a prediction of a good
+              product to sell on Amazon. [ NDA ]
+            </li>
+          </ul>
+        </section>
+
+        <section id="education" class="section-education">
+          <h2>Education</h2>
+          <p>
+            Computer Networking, Lviv Polytechnic National University, 1998-2003
+          </p>
+        </section>
+
+        <section id="language" class="section-language">
+          <h2>Language</h2>
+          <p>English: IELTS Overall band 6.5</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-content-list">
+          <li>
+            <a
+              href="https://github.com/dmytrobin"
+              class="footer-url"
+              target="_blank"
+              ><img
+                src="assets/img/github.svg"
+                alt="dmytrobin"
+                class="footer-github-url"
+            /></a>
+          </li>
+          <li>2022</li>
+          <li>
+            <a
+              href="https://rs.school/js-stage0/"
+              class="footer-url"
+              target="_blank"
+              ><img
+                src="assets/img/rs_school_logo.svg"
+                alt="rs-school-link"
+                class="rschool-url"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
